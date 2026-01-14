@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project 6</title>
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
         <!-- Reset css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -85,6 +89,12 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- Grid -->
         <link rel="stylesheet" href="./assets/css/grid.css" />
 
@@ -95,6 +105,56 @@
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <h1>Test</h1>
+        <!-- Navbar and header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-inner">
+                    <div class="mail-contact">
+                        <a
+                            href="mailto:hi@arif.interactive"
+                            class="mail-contact__wrap"
+                        >
+                            <img
+                                src="./assets/image/mail-contact.png"
+                                alt="hi@arif.interactive"
+                                class="mail-contact__icon"
+                            />
+                        </a>
+                        <a
+                            href="mailto:hi@arif.interactive"
+                            class="mail-contact__link"
+                            >hi@arif.interactive</a
+                        >
+                    </div>
+                    <a href="#!" class="logo-wrap">
+                        <img
+                            src="./assets/image/logo.png"
+                            class="logo"
+                            alt=""
+                        />
+                    </a>
+                    <!-- Nav-bar -->
+                    <input type="checkbox" id="menu-show" hidden />
+                    <label for="menu-show" class="btn-menu"></label>
+                    <nav class="header-nav">
+                        <ul class="header-nav-list">
+                            <li class="header-nav-list__item">
+                                <a href="">Projects</a>
+                            </li>
+                            <li class="header-nav-list__item">
+                                <a href="">Journey</a>
+                            </li>
+                            <li class="header-nav-list__item">
+                                <a href="">Service</a>
+                            </li>
+                            <li class="header-nav-list__item">
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
     </body>
 </html>

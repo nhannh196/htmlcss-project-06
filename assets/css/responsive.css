@@ -1,0 +1,120 @@
+/* Tablet and PC */
+@media screen and (min-width: 768px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    /* ------------------------------------------ Header ------------------------------------------*/
+    .header {
+        position: relative;
+        top: -4px;
+        padding-bottom: 16px;
+    }
+
+    .header::after {
+        position: absolute;
+        left: 7px;
+        right: 7px;
+        bottom: 0;
+        display: block;
+        content: "";
+        height: 1px;
+        background-color: #d6d3e2;
+    }
+    .logo-wrap {
+        order: 1;
+    }
+    .mail-contact {
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .mail-contact__wrap {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mail-contact__link {
+        display: none;
+    }
+
+    .logo-wrap {
+        padding: 0;
+    }
+
+    .logo {
+        width: 37px;
+        height: 44px;
+    }
+
+    .btn-menu {
+        order: 3;
+        display: inline-block;
+        content: "";
+        width: 32px;
+        height: 32px;
+        border: 1px solid #dbd4fc;
+        border-radius: 50%;
+        background-image: url(../icons/menu-icon.png);
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+
+    #menu-show:checked ~ .header-nav {
+        visibility: visible;
+        scale: 1;
+        opacity: 1;
+    }
+
+    #menu-show:checked ~ .btn-menu {
+        background-image: url(../icons/close-icon.svg);
+    }
+
+    .header-nav {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        order: 3;
+        z-index: 1;
+        transition: 0.5s;
+        visibility: hidden;
+        scale: 0;
+        transform-origin: 90% top;
+        opacity: 0;
+    }
+
+    .header-nav-list {
+        position: relative;
+        width: 200px;
+        display: flex;
+        row-gap: 0;
+        flex-direction: column;
+        border: 2px solid #dbd4fc;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    .header-nav-list::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: inline-block;
+        content: "";
+        width: 12px;
+        height: 12px;
+        transform: translate(-65%, -60%) rotate(45deg);
+        border-top: 2px solid #dbd4fc;
+        border-left: 2px solid #dbd4fc;
+        background-color: #fff;
+    }
+
+    .header-nav-list__item:not(:last-of-type) {
+        border-bottom: 1px solid #dbd4fc;
+    }
+
+    .header-nav-list__item a {
+        display: block;
+    }
+}
