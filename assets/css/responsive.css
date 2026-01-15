@@ -1,53 +1,11 @@
-/* Tablet and PC */
-@media screen and (min-width: 768px) {
+/* PC */
+@media screen and (min-width: 992px) {
+    /* ------------------------------------------ Header ------------------------------------------*/
 }
 
-/* Mobile */
-@media screen and (max-width: 767.98px) {
+/* Tablet and mobile */
+@media screen and (max-width: 991.98px) {
     /* ------------------------------------------ Header ------------------------------------------*/
-    .header {
-        position: relative;
-        top: -4px;
-        padding-bottom: 16px;
-    }
-
-    .header::after {
-        position: absolute;
-        left: 7px;
-        right: 7px;
-        bottom: 0;
-        display: block;
-        content: "";
-        height: 1px;
-        background-color: #d6d3e2;
-    }
-    .logo-wrap {
-        order: 1;
-    }
-    .mail-contact {
-        order: 2;
-        margin-left: auto;
-        margin-right: 10px;
-    }
-
-    .mail-contact__wrap {
-        width: 32px;
-        height: 32px;
-    }
-
-    .mail-contact__link {
-        display: none;
-    }
-
-    .logo-wrap {
-        padding: 0;
-    }
-
-    .logo {
-        width: 37px;
-        height: 44px;
-    }
-
     .btn-menu {
         order: 3;
         display: inline-block;
@@ -74,7 +32,7 @@
 
     .header-nav {
         position: absolute;
-        top: 50px;
+        top: 45px;
         right: 0;
         order: 3;
         z-index: 1;
@@ -116,5 +74,68 @@
 
     .header-nav-list__item a {
         display: block;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* ------------------------------------------ Header ------------------------------------------*/
+    .mail-contact__link {
+        font-size: 1.6rem;
+    }
+    .header-nav-list__item a {
+        font-size: 1.6rem;
+    }
+    /* .logo {
+        scale: 0.6;
+    } */
+    .header-nav {
+        top: 52px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    /* ------------------------------------------ Header ------------------------------------------*/
+    .header {
+        top: -4px;
+        padding-top: 26px;
+        padding-bottom: 22px;
+    }
+
+    .header::after {
+        position: absolute;
+        left: 7px;
+        right: 7px;
+        bottom: 0;
+        display: block;
+        content: "";
+        height: 1px;
+        background-color: #d6d3e2;
+    }
+
+    .mail-contact {
+        order: 2;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    .mail-contact__wrap {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mail-contact__link {
+        display: none;
+    }
+
+    .logo-wrap {
+        top: -6px;
+        left: 20px;
+        padding: 0;
+    }
+
+    .logo {
+        width: 37px;
+        height: 44px;
     }
 }
