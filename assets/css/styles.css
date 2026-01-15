@@ -265,8 +265,96 @@ a {
     border: 1px solid #080415;
 }
 
-.hero__decorate{
+.hero__decorate {
     position: absolute;
     bottom: 0;
     right: -160px;
+}
+
+/* ------------------------------------------ Clients ------------------------------------------*/
+.clients {
+    margin-top: 48px;
+    margin-bottom: 83px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+.clients__inner {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 105px;
+}
+
+.clients__heading {
+    display: flex;
+    column-gap: 13px;
+    width: 28%;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    line-height: 1.19048; /* 119.048% */
+    letter-spacing: -0.168rem;
+}
+
+.clients__heading::before {
+    margin-top: 26px;
+    display: inline-block;
+    content: "";
+    width: 86px;
+    height: 2px;
+    background-color: #5D3BEE;
+}
+
+.clients-list{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list-column{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 36px;
+    justify-content: space-between;
+}
+
+.clients-brand{
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+}
+
+.clients-brand__bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.bg-warner{
+    background-color: #FBFAFF;
+}
+
+.bg-upwork{
+    background-color: #14A800;
+}
+
+.bg-mailchimp{
+    background-color: #FEE101;
+}
+
+.bg-adobe{
+    background-color: #FF0000;
+}
+
+.bg-woocommerce{
+    background-color: #7F54B3;
+}
+
+.clients-brand__name{
+    font-weight: 600;
 }
