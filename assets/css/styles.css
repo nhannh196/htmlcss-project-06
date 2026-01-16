@@ -274,7 +274,6 @@ a {
 /* ------------------------------------------ Clients ------------------------------------------*/
 .clients {
     margin-top: 48px;
-    margin-bottom: 83px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #fff;
@@ -304,29 +303,29 @@ a {
     content: "";
     width: 86px;
     height: 2px;
-    background-color: #5D3BEE;
+    background-color: #5d3bee;
 }
 
-.clients-list{
+.clients-list {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
 
-.clients-list-column{
+.clients-list-column {
     display: grid;
     grid-template-columns: auto auto;
     gap: 36px;
     justify-content: space-between;
 }
 
-.clients-brand{
+.clients-brand {
     display: flex;
     align-items: center;
     column-gap: 13px;
 }
 
-.clients-brand__bg{
+.clients-brand__bg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,26 +334,99 @@ a {
     border-radius: 50%;
 }
 
-.bg-warner{
-    background-color: #FBFAFF;
+.bg-warner {
+    background-color: #fbfaff;
 }
 
-.bg-upwork{
-    background-color: #14A800;
+.bg-upwork {
+    background-color: #14a800;
 }
 
-.bg-mailchimp{
-    background-color: #FEE101;
+.bg-mailchimp {
+    background-color: #fee101;
 }
 
-.bg-adobe{
-    background-color: #FF0000;
+.bg-adobe {
+    background-color: #ff0000;
 }
 
-.bg-woocommerce{
-    background-color: #7F54B3;
+.bg-woocommerce {
+    background-color: #7f54b3;
 }
 
-.clients-brand__name{
+.clients-brand__name {
     font-weight: 600;
+}
+
+/* ------------------------------------------ Service ------------------------------------------*/
+.service {
+    margin-top: 33px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.service-content {
+    margin: 0 auto;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__desc {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-list{
+    margin-top: 60px;
+    row-gap: 30px;
+}
+
+.service-item {
+    height: 100%;
+    padding: 33px 43px;
+    background-color: #fbfaff;
+}
+
+.service-item__bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    border: 1px solid #efeef3;
+    border-radius: 50%;
+}
+
+.service-item__img {
+    scale: 50%;
+}
+
+.col:nth-of-type(1) .service-item__img {
+    filter: drop-shadow(0 7px 20px rgba(247, 222, 136, 0.4));
+}
+
+.col:nth-of-type(2) .service-item__img,
+.col:nth-of-type(3) .service-item__img {
+    filter: drop-shadow(0 10px 20px rgba(24, 64, 88, 0.25));
+}
+
+.service-item__heading {
+    margin-top: 22px;
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+    letter-spacing: -0.128rem;
+}
+
+.service-item__desc {
+    margin-top: 15px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667; /* 166.667% */
 }
