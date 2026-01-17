@@ -600,7 +600,7 @@ a {
     line-height: 1.667; /* 166.667% */
 }
 
-.about-me-media-layout{
+.about-me-media-layout {
     position: relative;
 }
 
@@ -651,5 +651,144 @@ a {
     border-radius: 50%;
     background-color: #fff;
     opacity: 70%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------------------------------ Testimonal ------------------------------------------*/
+.testimonal {
+    padding-top: 473px;
+    padding-bottom: 74px;
+    background-color: #fbfaff;
+}
+
+.testimonal-content {
+    width: 49%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.testimonal-content__desc {
+    text-align: center;
+}
+
+.testimonal-body {
+    width: 58%;
+   margin: 60px auto 0;
+    --testimonal-pos: 3;
+    overflow: hidden;
+}
+
+.testimonal-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    transition: 0.2s;
+}
+
+.testimonal-user {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 36px;
+}
+
+.testimonal-user__quote {
+    color: #51586a;
+    text-align: center;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.667; /* 166.667% */
+}
+
+.testimonal-user-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+.testimonal-user-top {
+    display: flex;
+    column-gap: 15px;
+}
+
+.testimonal-user-intro__avatar-bg {
+    width: 40px;
+    height: 40px;
+    padding-top: 6px;
+    border-radius: 50%;
+    background-color: #f29764;
+    overflow: hidden;
+}
+
+.testimonal-user-intro__avatar {
+    width: 100%;
+    object-fit: cover;
+}
+
+.testimonal-user-intro__name {
+    color: #080415;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.333; /* 133.333% */
+}
+
+.testimonal-user-intro__job {
+    color: #51586a;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.8125; /* 181.25% */
+}
+
+.testimonal-action {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.testimonal-action__check {
+    display: none;
+}
+.testimonal-action__dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #cac9d0;
+}
+
+.testimonal-action__dot::after {
+    visibility: hidden;
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #5d3bee;
+}
+
+.testimonal-action__check:checked + .testimonal-action__dot {
+    width: 12px;
+    height: 12px;
+    background-color: #5d3bee;
+    margin: 0 2px;
+}
+
+.testimonal-action__check:checked + .testimonal-action__dot::after {
+    visibility: visible;
 }
