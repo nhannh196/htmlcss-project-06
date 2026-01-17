@@ -348,15 +348,17 @@
             <section class="service">
                 <div class="container">
                     <div class="row">
-                        <div class="service-content">
-                            <h2 class="heading-2 service__heading">
-                                Specialities
-                            </h2>
-                            <p class="desc service__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt ut
-                                elementum turpis.
-                            </p>
+                        <div class="col">
+                            <div class="service-content">
+                                <h2 class="heading-2 service__heading">
+                                    Specialities
+                                </h2>
+                                <p class="desc service__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row service-list row-cols-md-3 row-cols-1">
@@ -422,15 +424,17 @@
             <section class="work">
                 <div class="container">
                     <div class="row">
-                        <div class="work-content">
-                            <h2 class="heading-2 work-content__heading">
-                                Take a look at my recent projects
-                            </h2>
-                            <p class="desc work-content__desc">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In urna, non nisl tincidunt ut
-                                elementum turpis.
-                            </p>
+                        <div class="col">
+                            <div class="work-content">
+                                <h2 class="heading-2 work-content__heading">
+                                    Take a look at my recent projects
+                                </h2>
+                                <p class="desc work-content__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row work-list row-cols-md-2">
@@ -531,8 +535,117 @@
                             </section>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn work__btn">All Projects</button>
+                        </div>
+                    </div>
                 </div>
             </section>
+
+            <!-- About me -->
+            <section class="about-me">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-me-content">
+                                <div class="about-me-title">
+                                    <span class="about-me-title__text"
+                                        >Hey,,,,It’s Arif</span
+                                    >
+                                    <img
+                                        src="./assets/icons/hand-icon.svg"
+                                        alt=""
+                                        class="about-me-title__icon"
+                                    />
+                                </div>
+                                <h2 class="heading-2 about-me_heading">
+                                    Interactive Designer
+                                </h2>
+                                <p class="desc about-me__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. In urna, non nisl tincidunt
+                                    ut elementum turpis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-me-intro">
+                                <div class="about-me-item">
+                                    <span class="about-me-item__num">08+</span>
+                                    <span class="about-me-item__text"
+                                        >Years Experience</span
+                                    >
+                                </div>
+                                <div class="about-me-item">
+                                    <span class="about-me-item__num">21+</span>
+                                    <span class="about-me-item__text"
+                                        >Features & Awards</span
+                                    >
+                                </div>
+                                <div class="about-me-item">
+                                    <span class="about-me-item__num">97%</span>
+                                    <span class="about-me-item__text"
+                                        >Clients Rating</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about-me-media-layout">
+                        <div class="col">
+                            <figure class="about-me-media">
+                                <video
+                                    src="./assets/video/intro.mp4"
+                                    id="aboutMeVideo"
+                                    class="about-me-media__video"
+                                    poster="./assets/image/about-me-video-thumb.png"
+                                    playsinline
+                                ></video>
+                                <span
+                                    id="introVideo"
+                                    class="about-me-media__intro"
+                                >
+                                    Intro Video
+                                </span>
+                                <button
+                                    id="playBtn"
+                                    class="about-me-media__button"
+                                ></button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
         </main>
+
+        <!-- JS -->
+        <script>
+            const video = document.getElementById("aboutMeVideo");
+            const playBtn = document.getElementById("playBtn");
+            const tagIntro = document.getElementById("introVideo");
+
+            playBtn.addEventListener("click", () => {
+                video.setAttribute("controls", "true"); // bật controls
+                video.play();
+                playBtn.style.visibility = "hidden";
+                tagIntro.style.visibility = "hidden"; // ẩn intro
+            });
+
+            video.addEventListener("click", () => {
+                video.stop();
+            });
+
+            video.addEventListener("ended", () => {
+                video.load(); // Reset video và hiển thị lại poster
+                video.controls = false;
+                playBtn.style.visibility = "visible";
+                tagIntro.style.visibility = "visible";
+            });
+        </script>
     </body>
 </html>
