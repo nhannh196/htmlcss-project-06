@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -622,7 +622,7 @@
 
             <!-- Testimonal -->
             <section class="testimonal">
-                <div class="container">
+                <div class="container testimonal__inner">
                     <div class="row">
                         <div class="col">
                             <div class="testimonal-content">
@@ -876,6 +876,170 @@
                             </div>
                         </div>
                     </div>
+                    <div class="testimonal-deco-left">
+                        <img
+                            src="./assets/image/testimonal-decorate-left.png"
+                            alt=""
+                            class="testimonal-deco-left__img"
+                        />
+                    </div>
+                    <div class="testimonal-deco-right">
+                        <img
+                            src="./assets/image/testimonal-decorate-right.png"
+                            alt=""
+                            class="testimonal-deco-righ__img"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Faq -->
+            <section class="faq">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>
+                                <div class="heading-2 faq__heading">
+                                    A few questions clients&nbsp;normally ask me
+                                </div>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="faq-list">
+                                <!-- Item 1 -->
+                                <article class="faq-item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        value=""
+                                        id="faq-show-1"
+                                        class="faq-item__check"
+                                    />
+                                    <label
+                                        for="faq-show-1"
+                                        class="faq-item__icon"
+                                    ></label>
+                                    <div class="faq-item-content">
+                                        <h3 class="faq-item-content__question">
+                                            What is your hourly rate?
+                                        </h3>
+                                        <p class="faq-item-content__answer">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                 <!-- Item 2 -->
+                                <article class="faq-item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        value=""
+                                        id="faq-show-2"
+                                        class="faq-item__check"
+                                    />
+                                    <label
+                                        for="faq-show-2"
+                                        class="faq-item__icon"
+                                    ></label>
+                                    <div class="faq-item-content">
+                                        <h3 class="faq-item-content__question">
+                                            What type of projects do you take on?
+                                        </h3>
+                                        <p class="faq-item-content__answer">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                 <!-- Item 3 -->
+                                <article class="faq-item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        value=""
+                                        id="faq-show-3"
+                                        class="faq-item__check"
+                                    />
+                                    <label
+                                        for="faq-show-3"
+                                        class="faq-item__icon"
+                                    ></label>
+                                    <div class="faq-item-content">
+                                        <h3 class="faq-item-content__question">
+                                           How do you charge for projects ?
+                                        </h3>
+                                        <p class="faq-item-content__answer">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                 <!-- Item 4 -->
+                                <article class="faq-item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        value=""
+                                        id="faq-show-4"
+                                        class="faq-item__check"
+                                    />
+                                    <label
+                                        for="faq-show-4"
+                                        class="faq-item__icon"
+                                    ></label>
+                                    <div class="faq-item-content">
+                                        <h3 class="faq-item-content__question">
+                                            What time-zone do you work in?
+                                        </h3>
+                                        <p class="faq-item-content__answer">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                </article>
+
+                                 <!-- Item 5 -->
+                                <article class="faq-item">
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        value=""
+                                        id="faq-show-5"
+                                        class="faq-item__check"
+                                    />
+                                    <label
+                                        for="faq-show-5"
+                                        class="faq-item__icon"
+                                    ></label>
+                                    <div class="faq-item-content">
+                                        <h3 class="faq-item-content__question">
+                                            How often can we communicate?
+                                        </h3>
+                                        <p class="faq-item-content__answer">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit. In
+                                            urna, non nisl tincidunt ut
+                                            elementum turpis.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
@@ -907,13 +1071,12 @@
 
             // Testimonal
             const dots = document.querySelectorAll(".testimonal-action__check");
-            const listTestimonal= document.querySelector(".testimonal-list");
+            const listTestimonal = document.querySelector(".testimonal-list");
             dots.forEach((dot, index) => {
                 dot.addEventListener("click", () => {
-                     listTestimonal.style.transform = `translateX(-${index * 100}%)`;
+                    listTestimonal.style.transform = `translateX(-${index * 100}%)`;
                 });
             });
-            
         </script>
     </body>
 </html>
