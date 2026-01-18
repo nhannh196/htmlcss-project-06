@@ -943,18 +943,85 @@ a {
     text-underline-position: from-font;
 }
 
-.gallery-media{
+.gallery-media {
     margin-top: 70px;
     position: relative;
     width: 100%;
     padding-top: 143%;
 }
 
-.gallery-media__img{
+.gallery-media__img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* ------------------------------------------ Cta ------------------------------------------*/
+.cta {
+    margin-top: 90px;
+}
+
+.cta-container {
+    position: relative;
+    width: 1330px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    background-color: #fbfaff;
+}
+
+.cta__inner {
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cta__img {
+    width: 90px;
+    height: 90px;
+}
+
+.cta__heading {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cta__desc {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta__btn {
+    margin-top: 40px;
+}
+
+.cta__deco-left,
+.cta__deco-center,
+.cta__deco-right {
+    position: absolute;
+}
+
+.cta__deco-left {
+    left: 0;
+    bottom: 0;
+}
+
+.cta__deco-center {
+    top: 0;
+    left: 50%;
+    transform: translateX(-54%);
+}
+
+.cta__deco-right {
+    top: 0;
+    right: 0;
 }
