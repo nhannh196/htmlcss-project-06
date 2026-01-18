@@ -11,7 +11,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "DM Sans", sans-serif;
-    height: 8000px;
 }
 .container {
     padding-left: 0;
@@ -147,20 +146,22 @@ a {
     display: none;
 }
 
-.header-nav-list {
+.header-nav-list,
+.footer-nav-list {
     display: flex;
     row-gap: 10px;
 }
 
-.header-nav-list__item a {
+.header-nav-list__item a,
+.footer-nav-list__item a {
     padding: 18px 22px;
     color: #51586a;
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 400;
 }
 
-.header-nav-list__item:hover a {
+.header-nav-list__item:hover a,
+.footer-nav-list__item:hover a {
     text-shadow:
         0.5px 0 #51586a,
         -0.5px 0 #51586a;
@@ -1024,4 +1025,73 @@ a {
 .cta__deco-right {
     top: 0;
     right: 0;
+}
+
+/* ------------------------------------------ Footer ------------------------------------------*/
+.footer {
+    margin-top: 50px;
+    padding-top: 27px;
+    background-color: #fff;
+}
+
+.footer-container {
+    position: relative;
+    width: 1429px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-menu {
+    width: calc(100% - 99px);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #cecdd2;
+}
+
+.footer-bottom-right {
+    display: flex;
+}
+
+.footer-bottom {
+    padding: 18px 147px 30px 129px;
+    /* padding-top: 18px;
+    padding-bottom: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-bottom__copyright,
+.footer-bottom-right__policy,
+.footer-bottom-right__conditions {
+    color: #525771;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.667; /* 166.667% */
+}
+
+.footer-bottom-right__policy {
+    border-right: 1px solid #979aaa;
+}
+
+.footer-bottom-right__policy,
+.footer-bottom-right__conditions {
+    padding-right: 23px;
+    padding-left: 23px;
+    letter-spacing: -0.54px;
+}
+
+.footer-bottom-right__policy:hover,
+.footer-bottom-right__conditions:hover{
+    color: #080415;
 }

@@ -88,7 +88,7 @@
     /* .logo {
         scale: 0.6;
     } */
-    .header-nav {
+    .header-nav,.footer-nav {
         top: 52px;
     }
 }
