@@ -1,6 +1,10 @@
 /* PC */
 @media screen and (min-width: 992px) {
-    /* ------------------------------------------ Header ------------------------------------------*/
+    /* ------------------------------------------ Hero ------------------------------------------*/
+    .hero-content {
+        /* margin-top: 137px;
+        margin-top: 27.4%; */
+    }
 }
 
 /* Tablet and mobile */
@@ -76,6 +80,7 @@
         display: block;
     }
 }
+
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     /* ------------------------------------------ Header ------------------------------------------*/
@@ -88,13 +93,37 @@
     /* .logo {
         scale: 0.6;
     } */
-    .header-nav,.footer-nav {
+    .header-nav,
+    .footer-nav {
         top: 52px;
+    }
+
+    /* ------------------------------------------ Hero ------------------------------------------*/
+    .hero__decorate {
+        /* right: 0; */
     }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
+    /* Common */
+    .desc {
+        line-height: 1.625; /* 162.5% */
+    }
+
+    .heading-1 {
+        line-height: 1.2; /* 119.048% */
+        letter-spacing: -0.168rem;
+    }
+
+    .heading-2 {
+        line-height: 1.1667; /* 116.667% */
+        letter-spacing: -0.144rem;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
     /* ------------------------------------------ Header ------------------------------------------*/
     .header {
         top: -4px;
@@ -137,5 +166,49 @@
     .logo {
         width: 37px;
         height: 44px;
+    }
+
+    /* ------------------------------------------ Hero ------------------------------------------*/
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero__inner {
+        flex-direction: column-reverse;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .hero-content {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .hero-content__heading {
+        width: calc(260 / 390 * 100%);
+    }
+
+    .hero-action {
+        margin-top: 30px;
+        column-gap: 40px;
+    }
+
+    .hero-social {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .hero-media {
+        margin-top: 26px;
+        align-self: center;
+        width: calc(260 / 390 * 100%);
+        /* overflow: hidden; */
+    }
+
+    .hero-media__bg {
+        width: 220%;
+        left: -160px;
+        bottom: -85px;
     }
 }

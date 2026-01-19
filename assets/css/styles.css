@@ -20,7 +20,7 @@ body {
 /* Common */
 .heading-1 {
     color: #080415;
-    font-size: 8rem;
+    font-size: clamp(4.2rem, 16.9vw - 8.8rem, 8rem);
     font-style: normal;
     font-weight: 500;
     line-height: 0.95;
@@ -29,7 +29,7 @@ body {
 
 .heading-2 {
     color: #080415;
-    font-size: 5.6rem;
+    font-size: clamp(4.2rem, 6.25vw - 0.6rem, 5.6rem);
     font-style: normal;
     font-weight: 500;
     line-height: 1.117857;
@@ -83,9 +83,9 @@ a {
 }
 
 .header-container {
-    width: 1330px;
-    max-width: calc(100% - 40px);
-    margin: 0 auto;
+    width: min(100% - 40px, 1330px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header-inner {
@@ -178,15 +178,14 @@ a {
 .hero__inner {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .hero-media {
+    align-self: flex-end;
     flex-shrink: 0;
     position: relative;
     width: 44%;
-    /* height: 705px; */
 }
 
 .hero-media__img {
@@ -197,14 +196,16 @@ a {
 
 .hero-media__bg {
     position: absolute;
+    width: 174%;
     bottom: 0;
     right: -165px;
-    /* object-fit: cover; */
+    right: calc(-100% * (165 / 514));
+    object-fit: cover;
 }
 
 .hero-content {
     width: 43%;
-    /* margin-left: auto; */
+    align-self: flex-end;
 }
 
 .hero-content__heading {
@@ -237,7 +238,10 @@ a {
 }
 
 .hero-social {
-    margin-top: 104px;
+    position: relative;
+    margin-top: 20.8%;
+    padding-bottom: 8.6%;
+    z-index: 1;
 }
 
 .hero-social__text {
@@ -269,9 +273,10 @@ a {
 }
 
 .hero__decorate {
+    width: calc(382 / 1170 * 100%);
     position: absolute;
     bottom: 0;
-    right: -160px;
+    right: calc(-100% * (160 / 1170));
 }
 
 /* ------------------------------------------ Clients ------------------------------------------*/
@@ -1092,6 +1097,6 @@ a {
 }
 
 .footer-bottom-right__policy:hover,
-.footer-bottom-right__conditions:hover{
+.footer-bottom-right__conditions:hover {
     color: #080415;
 }
