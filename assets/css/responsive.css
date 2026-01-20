@@ -152,6 +152,10 @@
     .btn {
         font-size: 16px;
     }
+
+    .dots-action {
+        padding-bottom: 0;
+    }
     /* ------------------------------------------ Header ------------------------------------------*/
     .header {
         top: -4px;
@@ -213,8 +217,8 @@
         align-self: flex-start;
     }
 
-    .hero-content__heading {
-        width: calc(260 / 390 * 100%);
+    .hero-content__desc {
+        width: 100%;
     }
 
     .hero-action {
@@ -275,15 +279,14 @@
     }
 
     .clients-list {
+        width: 100%;
         margin-top: 40px;
         row-gap: 30px;
+        align-items: normal;
     }
 
     .clients-list-column {
         row-gap: 34px;
-    }
-
-    .clients-brand__bg {
     }
 
     /* ------------------------------------------ Service ------------------------------------------*/
@@ -332,5 +335,72 @@
     .service-dots-action {
         margin-top: 30px;
         display: flex;
+    }
+
+    /* ------------------------------------------ Work ------------------------------------------*/
+    .work {
+        margin-top: 20px;
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+    .work-content,
+    .work-list {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work-content {
+        flex-direction: column;
+    }
+
+    .work-content__heading,
+    .work-content__desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .work-content__desc {
+        margin-top: 20px;
+    }
+
+    .work-list {
+        margin-top: 60px;
+    }
+
+    .work-item {
+        padding: 20px 15px;
+        column-gap: 22px;
+        background-image: url(../image/work-decorate-mobile.png);
+        background-position: 100% center;
+        background-size: 75%;
+    }
+
+    .work-item__heading {
+        font-size: 2.4rem;
+        line-height: 1.41667; /* 141.667% */
+        letter-spacing: -0.096rem;
+    }
+
+    .work-item__desc {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 1.4285; /* 142.857% */
+    }
+
+    .work-item__link {
+        margin-top: 4px;
+        font-size: 1.6rem;
+        line-height: 1.75; /* 175% */
+    }
+
+    .work-item__bg {
+        width: calc(122 / 320 * 100%);
+        padding-top: calc(93 / 320 * 100%);
+    }
+
+    .work__btn {
+        margin-top: 50px;
+        font-size: 1.6rem;
     }
 }

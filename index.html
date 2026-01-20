@@ -390,7 +390,9 @@
                         </div>
                     </div>
                     <div class="service-wrap">
-                        <div class="service-list row row-cols-md-3 row-cols-1">
+                        <div
+                            class="service-list row-cols-lg-3 row row-cols-md-2 row-cols-1"
+                        >
                             <div class="col">
                                 <article class="service-item">
                                     <span class="service-item__bg">
@@ -462,7 +464,6 @@
                                     name="service-list"
                                     value=""
                                     checked
-
                                 />
                                 <label
                                     for="service-dot-1"
@@ -515,7 +516,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row work-list row-cols-md-2">
+                    <div class="row work-list row-cols-lg-2 row-cols-1">
                         <!-- Item 1 -->
                         <div class="col">
                             <section class="work-item">
@@ -527,11 +528,11 @@
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
                                     </p>
-                                    <a href="" class="work-item__link">
+                                    <a href="#!" class="work-item__link">
                                         Case Study
                                     </a>
                                 </div>
-                                <a href="#!">
+                                <a class="work-item__bg" href="#!">
                                     <img
                                         src="./assets/image/work-1.png"
                                         alt=""
@@ -551,11 +552,11 @@
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
                                     </p>
-                                    <a href="" class="work-item__link">
+                                    <a href="#!" class="work-item__link">
                                         Case Study
                                     </a>
                                 </div>
-                                <a href="#!">
+                                <a class="work-item__bg" href="#!">
                                     <img
                                         src="./assets/image/work-2.png"
                                         alt=""
@@ -575,11 +576,11 @@
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
                                     </p>
-                                    <a href="" class="work-item__link">
+                                    <a href="#!" class="work-item__link">
                                         Case Study
                                     </a>
                                 </div>
-                                <a href="#!">
+                                <a class="work-item__bg" href="#!">
                                     <img
                                         src="./assets/image/work-3.png"
                                         alt=""
@@ -603,7 +604,7 @@
                                         Case Study
                                     </a>
                                 </div>
-                                <a href="#!">
+                                <a class="work-item__bg" href="#!">
                                     <img
                                         src="./assets/image/work-4.png"
                                         alt=""
@@ -1306,7 +1307,9 @@
             });
 
             // Service
-            const dotsService = document.querySelectorAll(".service-action__check");
+            const dotsService = document.querySelectorAll(
+                ".service-action__check",
+            );
             const listService = document.querySelector(".service-list");
             dotsService.forEach((dot, index) => {
                 dot.addEventListener("click", () => {
