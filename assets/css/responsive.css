@@ -129,6 +129,14 @@
         column-gap: 36px;
     }
     /* ------------------------------------------ Service ------------------------------------------*/
+    /* ------------------------------------------ About me ------------------------------------------*/
+    .about-me-title__icon {
+        width: 22px;
+        height: 22px;
+    }
+    .about-me-intro {
+        padding: 30px 30px;
+    }
 }
 
 /* Mobile */
@@ -402,5 +410,88 @@
     .work__btn {
         margin-top: 50px;
         font-size: 1.6rem;
+    }
+
+    /* ------------------------------------------ About me ------------------------------------------*/
+    .about-me {
+        margin-top: 70px;
+    }
+
+    .about-me-media-layout,
+    .about-me-content,
+    .about-me-intro {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me-title__text {
+        line-height: 2; /* 200% */
+        letter-spacing: -0.08rem;
+    }
+
+    .about-me-title__icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .about-me_heading {
+        text-align: center;
+    }
+
+    .about-me__desc {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about-me-intro {
+        margin-top: 50px;
+        padding: 30px 16px;
+        column-gap: 20px;
+    }
+
+    .about-me-item__num {
+        line-height: 1.4; /* 140% */
+        letter-spacing: 0.09rem;
+    }
+
+    .about-me-item__text {
+        margin-top: 5px;
+        font-size: 1.6rem;
+        line-height: 1.375; /* 137.5% */
+    }
+
+    .about-me-item:nth-of-type(1) {
+        order: 2;
+    }
+
+    .about-me-item:nth-of-type(2) {
+        order: 1;
+    }
+
+    .about-me-item:nth-of-type(3) {
+        order: 3;
+    }
+
+    .about-me-media-layout {
+        margin-top: 40px;
+        padding-bottom: calc(276 / 350 * calc(100% - 40px) / 2);
+    }
+
+    .about-me-media {
+        padding-top: calc(276 / 350 * 100%);
+    }
+
+    .about-me-media__intro {
+        width: 118px;
+        height: 44px;
+        font-size: 1.2rem;
+        line-height: 2.5;
+    }
+
+    .about-me-media__button {
+        width: calc(77 / 350 * 100%);
+        height: calc(77 / 276 * 100%);
+        background-size: 15%;
     }
 }

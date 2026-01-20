@@ -597,11 +597,13 @@ a {
     background-color: #fff;
 }
 
-/* ------------------------------------------ Work ------------------------------------------*/
+/* ------------------------------------------ About me ------------------------------------------*/
 .about-me {
     margin-top: 90px;
     padding-top: 50px;
-    padding-bottom: 375px;
+    /* padding-bottom: calc(375 / 1600 * 100%); */
+    /* padding-bottom: min(375 / 1600 * 100%, 375px); */
+    /* padding-bottom: 375px; */
     background-color: #fff;
 }
 
@@ -613,17 +615,23 @@ a {
 }
 
 .about-me-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 9px;
+}
+
+.about-me-title__text {
     color: #5d3bee;
-    font-size: 3.2rem;
+    font-size: clamp(2rem, 5.4vw - 2.15rem, 3.2rem);
     font-weight: 500;
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;
     letter-spacing: -0.128rem;
 }
 
 .about-me-title__icon {
     width: 30px;
     height: 30px;
-    margin-left: 9px;
 }
 
 .about-me_heading {
@@ -655,7 +663,7 @@ a {
 
 .about-me-item__num {
     color: #080415;
-    font-size: 5.6rem;
+    font-size: clamp(3rem, 11.6vw - 5.91rem, 5.6rem);
     font-weight: 500;
     line-height: 1.35714; /* 135.714% */
     letter-spacing: 1.68px;
@@ -675,15 +683,18 @@ a {
 }
 
 .about-me-media-layout {
+    width: 100%;
+    margin-top: 70px;
     position: relative;
+    padding-bottom: calc(628 / 1170 / 2 * 100%);
 }
 
 .about-me-media {
     position: absolute;
-    top: 70px;
+    top: 0;
     left: 0;
     width: 100%;
-    padding-top: 53.68%;
+    padding-top: calc(628 / 1170 * 100%);
     background-color: transparent;
 }
 
@@ -693,6 +704,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .about-me-media__intro {
@@ -723,8 +735,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-color: #fff;
-    opacity: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
     transform: translate(-50%, -50%);
 }
 
@@ -733,6 +745,7 @@ a {
     padding-top: 473px;
     /* padding-bottom: 74px; */
     background-color: #fbfaff;
+    background-color: red;
 }
 
 .testimonal__inner {
