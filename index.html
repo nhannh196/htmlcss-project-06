@@ -1253,7 +1253,7 @@
                         src="./assets/image/cta-deco-center.png"
                         alt=""
                         class="cta__deco-center"
-                    />
+                    /> 
                     <img
                         src="./assets/image/cta-deco-right.png"
                         alt=""
@@ -1365,7 +1365,9 @@
             });
 
             // Testimonal
-            const dotsTestimonal = document.querySelectorAll(".testimonal-action__check");
+            const dotsTestimonal = document.querySelectorAll(
+                ".testimonal-action__check",
+            );
             const listTestimonal = document.querySelector(".testimonal-list");
             dotsTestimonal.forEach((dot, index) => {
                 dot.addEventListener("click", () => {
@@ -1374,7 +1376,9 @@
             });
 
             // Gallery
-            const dotsGallery = document.querySelectorAll(".gallery-action__check");
+            const dotsGallery = document.querySelectorAll(
+                ".gallery-action__check",
+            );
             const listGallery = document.querySelector(".gallery-list");
             dotsGallery.forEach((dot, index) => {
                 dot.addEventListener("click", () => {
