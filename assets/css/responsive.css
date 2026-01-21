@@ -480,6 +480,7 @@
 
     .about-me-media {
         padding-top: calc(276 / 350 * 100%);
+        z-index: 1;
     }
 
     .about-me-media__intro {
@@ -493,5 +494,59 @@
         width: calc(77 / 350 * 100%);
         height: calc(77 / 276 * 100%);
         background-size: 15%;
+    }
+
+    /* ------------------------------------------ Testimonal ------------------------------------------*/
+    .testimonal {
+        position: relative;
+    }
+    .testimonal__inner {
+        padding-bottom: 67px;
+        position: static;
+    }
+    .testimonal-content,
+    .testimonal-body {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testimonal-content {
+        padding-top: calc(235 / 350 * calc(100% - 40px));
+    }
+
+    .testimonal-body {
+        margin-top: 40px;
+    }
+
+    .testimonal-user__quote {
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.667; /* 166.667% */
+    }
+
+    .testimonal-user-intro {
+        margin-top: 48px;
+    }
+
+    .testimonal-user-intro__name {
+        font-size: 2.4rem;
+    }
+
+    .dots-action {
+        margin-top: 20px;
+    }
+
+    .testimonal-deco-left,
+    .testimonal-deco-right {
+        transform: scale(0.3);
+    }
+
+    .testimonal-deco-left {
+    translate: -35% 35%;
+    }
+
+    .testimonal-deco-right {
+       translate: 35% 35%;
     }
 }
