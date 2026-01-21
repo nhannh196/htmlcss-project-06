@@ -1143,36 +1143,83 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row row-cols-md-3 row-cols-1">
-                        <!-- Item 1 -->
-                        <div class="col">
-                            <figure class="gallery-media">
-                                <img
-                                    src="./assets/image/gallery-img-1.png"
-                                    alt=""
-                                    class="gallery-media__img"
-                                />
-                            </figure>
+                    <div class="gallery-wrap">
+                        <div class="gallery-list row row-cols-md-3 row-cols-1">
+                            <!-- Item 1 -->
+                            <div class="col">
+                                <figure class="gallery-media">
+                                    <img
+                                        src="./assets/image/gallery-img-1.png"
+                                        alt=""
+                                        class="gallery-media__img"
+                                    />
+                                </figure>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="col">
+                                <figure class="gallery-media">
+                                    <img
+                                        src="./assets/image/gallery-img-2.png"
+                                        alt=""
+                                        class="gallery-media__img"
+                                    />
+                                </figure>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="col">
+                                <figure class="gallery-media">
+                                    <img
+                                        src="./assets/image/gallery-img-3.png"
+                                        alt=""
+                                        class="gallery-media__img"
+                                    />
+                                </figure>
+                            </div>
                         </div>
-                        <!-- Item 2 -->
+                    </div>
+                    <div class="row">
                         <div class="col">
-                            <figure class="gallery-media">
-                                <img
-                                    src="./assets/image/gallery-img-2.png"
-                                    alt=""
-                                    class="gallery-media__img"
+                            <!-- Gallery action -->
+                            <div class="dots-action gallery-dots-action">
+                                <!-- Dot 1 -->
+                                <input
+                                    class="gallery-action__check"
+                                    id="gallery-dot-1"
+                                    type="radio"
+                                    name="gallery-list"
+                                    value=""
+                                    checked
                                 />
-                            </figure>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="col">
-                            <figure class="gallery-media">
-                                <img
-                                    src="./assets/image/gallery-img-3.png"
-                                    alt=""
-                                    class="gallery-media__img"
+                                <label
+                                    for="gallery-dot-1"
+                                    class="action__dot"
+                                ></label>
+                                <!-- Dot 2 -->
+                                <input
+                                    class="gallery-action__check"
+                                    id="gallery-dot-2"
+                                    type="radio"
+                                    name="gallery-list"
+                                    value=""
+                                    checked
                                 />
-                            </figure>
+                                <label
+                                    for="gallery-dot-2"
+                                    class="action__dot"
+                                ></label>
+                                <!-- Dot 3 -->
+                                <input
+                                    class="gallery-action__check"
+                                    id="gallery-dot-3"
+                                    type="radio"
+                                    name="gallery-list"
+                                    value=""
+                                />
+                                <label
+                                    for="gallery-dot-3"
+                                    class="action__dot"
+                                ></label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1318,11 +1365,20 @@
             });
 
             // Testimonal
-            const dots = document.querySelectorAll(".testimonal-action__check");
+            const dotsTestimonal = document.querySelectorAll(".testimonal-action__check");
             const listTestimonal = document.querySelector(".testimonal-list");
-            dots.forEach((dot, index) => {
+            dotsTestimonal.forEach((dot, index) => {
                 dot.addEventListener("click", () => {
                     listTestimonal.style.transform = `translateX(-${index * 100}%)`;
+                });
+            });
+
+            // Gallery
+            const dotsGallery = document.querySelectorAll(".gallery-action__check");
+            const listGallery = document.querySelector(".gallery-list");
+            dotsGallery.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    listGallery.style.transform = `translateX(-${index * 100}%)`;
                 });
             });
         </script>
