@@ -19,6 +19,7 @@ body {
 }
 
 /* Common */
+
 figure {
     margin: 0;
 }
@@ -60,6 +61,11 @@ figure {
     line-height: 1.667;
     background: #5d3bee;
     cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.1;
+    text-decoration: underline;
 }
 
 input,
