@@ -713,11 +713,18 @@
     }
 
     .footer-nav-list {
-        width: calc(100% + 44px);
-        /* width: 100%; */
+        /* width: calc(100% + 44px); */
+        width: 100%;
+        flex-wrap: wrap;
         justify-content: space-between;
-        margin-left: -22px;
-        margin-right: -22px;
+        gap: 20px;
+        /* margin-left: -22px;
+        margin-right: -22px; */
+    }
+
+    .footer-nav-list__item a{
+        padding-left: 0;
+        padding-right: 0;
     }
 
     footer .mail-contact {
