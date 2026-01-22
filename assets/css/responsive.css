@@ -159,6 +159,13 @@
 /* Mobile */
 @media screen and (max-width: 767.98px) {
     /* Common */
+    html,
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
     .desc {
         font-size: 1.6rem;
         line-height: 1.625; /* 162.5% */
@@ -722,7 +729,7 @@
         margin-right: -22px; */
     }
 
-    .footer-nav-list__item a{
+    .footer-nav-list__item a {
         padding-left: 0;
         padding-right: 0;
     }
@@ -758,7 +765,7 @@
         margin-top: 30px;
     }
 
-    .footer-bottom-mobile__copyright{
+    .footer-bottom-mobile__copyright {
         width: calc(100% - 52px);
         text-align: center;
         margin: 20px auto 0;
