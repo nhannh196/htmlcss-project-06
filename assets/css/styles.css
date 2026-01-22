@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -219,6 +220,7 @@ a {
 
 /* ------------------------------------------ Hero ------------------------------------------*/
 .hero {
+    position: relative;
     padding-top: 44px;
     background-color: #fbfaff;
     /* background-color: #5d3bee; */
@@ -228,6 +230,7 @@ a {
     position: relative;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .hero-media {
@@ -322,15 +325,15 @@ a {
 }
 
 .hero__decorate {
-    width: calc(382 / 1170 * 100%);
+    /* width: calc(382 / 1170 * 100%); */
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-@media screen and (min-width: 1715px) {
+@media screen and (min-width: 1600px) {
     .hero__decorate {
-        right: calc(-100% * (160 / 1170));
+        right: calc((100% - 1600px) / 2);
     }
 }
 
@@ -755,6 +758,7 @@ a {
 
 /* ------------------------------------------ Testimonal ------------------------------------------*/
 .testimonal {
+    position: relative;
     background-color: #fbfaff;
     /* background-color: red; */
 }
@@ -876,12 +880,14 @@ a {
     right: 0;
 }
 
-@media screen and (min-width: 1750px) {
+@media screen and (min-width: 1603px) {
     .testimonal-deco-left {
-        transform: translateX(-70%);
+        /* transform: translateX(330%); */
+        left: calc((100% - 1600px) / 2);
     }
     .testimonal-deco-right {
-        transform: translateX(56%);
+        /* transform: translateX(36%); */
+        right: calc((100% - 1600px) / 2);
     }
 }
 
